@@ -1,0 +1,14 @@
+{
+    "author": "David Genesis Cruz",
+    "name": "Youtube Ad Remover",
+    "version": "1.0.0",
+    "description": "Remove overlay ads and automatically skip video ads",
+    "manifest_version": 2,
+    "short_name": "Youtube Ad Remover",
+    "content_scripts": [
+        {
+            "matches": [ "https://www.youtube.com/watch?v=*" ],
+            "js": [ "inject.js" ]
+        }
+    ]
+}
